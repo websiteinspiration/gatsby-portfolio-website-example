@@ -14,7 +14,6 @@ export default function Index() {
           <div className={styles.title}>
             <h1>Joe Attardi</h1>
             <h2>Software Engineer</h2>
-            <h3><FontAwesomeIcon icon="map-marker" /> Billerica, MA</h3>
           </div>
           <div className={styles.links}>
             <div className={styles.link}>
