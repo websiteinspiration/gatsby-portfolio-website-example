@@ -27,30 +27,32 @@ export default function Index({ data }) {
             <h2>Software Engineer</h2>
           </div>
           <div className={styles.links}>
-            <div className={styles.link}>
-              <a href="mailto:jattardi@gmail.com">
-                <FontAwesomeIcon icon="envelope" />
-              </a>
-            </div>
-            <div className={styles.link}>
-              <a href="https://twitter.com/joeattardi">
-                <FontAwesomeIcon icon={['fab', 'twitter']} />
-              </a>
-            </div>
-            <div className={styles.link}>
-              <a href="https://github.com/joeattardi">
-                <FontAwesomeIcon icon={['fab', 'github']} />
-              </a>
-            </div>
-            <div className={styles.link}>
-              <a href="https://linkedin.com/in/joeattardi">
-                <FontAwesomeIcon icon={['fab', 'linkedin']} />
-              </a>
-            </div>
+            <SocialLink
+              href="mailto:jattardi@gmail.com" 
+              icon="envelope" />
+            <SocialLink
+              href="https://twitter.com/joeattardi"
+              icon={['fab', 'twitter']} />
+            <SocialLink
+              href="https://github.com/joeattardi"
+              icon={['fab', 'github']} />
+            <SocialLink
+              href="https://linkedin.com/in/joeattardi"
+              icon={['fab', 'linkedin']} />
           </div>
         </div>
       </div>
     </Layout>
+  );
+}
+
+function SocialLink({ href, icon }) {
+  return (
+    <div className={styles.link}>
+      <a href={href}>
+        <FontAwesomeIcon icon={icon} />
+      </a>
+    </div>
   );
 }
 
