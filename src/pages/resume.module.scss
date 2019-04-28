@@ -1,5 +1,4 @@
 #resume {
-  // background: #F3EFE0;
   max-width: 900px;
   margin: auto;
   padding: 0.5em;
@@ -8,6 +7,36 @@
     margin: 0;
     color: #7DA5C6;
     font-weight: normal;
+  }
+
+  .skills-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    div {
+      margin-right: 0.25em;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    ul {
+      margin-top: 0;
+      list-style: none;
+      padding: 0;
+
+      li {
+        background: #E1ECF4;
+        border: 1px solid darken(#E1ECF4, 5%);
+        display: inline-block;
+        margin: 0.25em;
+        padding: 0.25em 0.5em;
+        border-radius: 5px;
+        font-size: 0.8em;
+      }
+    }
   }
 
   .resume-section {

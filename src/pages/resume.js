@@ -63,7 +63,7 @@ export default function Resume() {
     <Layout>
       <main id={styles.resume}>
 
-        <h1><FontAwesomeIcon icon="graduation-cap" /> Education</h1>
+        <h1><FontAwesomeIcon icon="graduation-cap" fixedWidth={true} /> Education</h1>
         <section className={styles.resumeSection}>
           <div>
             <Img fixed={data.uml.childImageSharp.fixed} />
@@ -81,7 +81,56 @@ export default function Resume() {
           </div>
         </section>
 
-        <h1><FontAwesomeIcon icon="briefcase" /> Work Experience</h1>
+        <h1><FontAwesomeIcon icon="code" fixedWidth={true} /> Skills</h1>
+        <section className={styles.skillsSection}>
+          <div>
+            <h2><FontAwesomeIcon icon={['fab', 'js']} /> JavaScript</h2>
+            <ul>
+              <li><FontAwesomeIcon icon={['fab', 'angular']} /> Angular</li>
+              <li>Backbone</li>
+              <li>Jasmine</li>
+              <li>Jest</li>
+              <li>jQuery</li>
+              <li>Mocha</li>
+              <li><FontAwesomeIcon icon={['fab', 'react']} /> React</li>
+              <li>RxJS</li>
+              <li>TypeScript</li>
+              <li>Webpack</li>
+            </ul>
+            <ul>
+              <li>Express</li>
+              <li><FontAwesomeIcon icon={['fab', 'node-js']} /> Node.js</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2><FontAwesomeIcon icon={['fab', 'java']} /> Java</h2>
+            <ul>
+              <li>JSP</li>
+              <li>JUnit</li>
+              <li>Spring</li>
+              <li>Swing</li>
+            </ul>
+
+            <h2><FontAwesomeIcon icon="toolbox" /> Tools</h2>
+            <ul>
+              <li><FontAwesomeIcon icon={['fab', 'git']} /> Git</li>
+              <li>Vim</li>
+              <li>Visual Studio Code</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Web</h2>
+            <ul>
+              <li><FontAwesomeIcon icon={['fab', 'html5']} /> HTML5</li>
+              <li><FontAwesomeIcon icon={['fab', 'css3']} /> CSS3</li>
+              <li><FontAwesomeIcon icon={['fab', 'sass']} /> SASS</li>
+            </ul>
+          </div>
+        </section>
+
+        <h1><FontAwesomeIcon icon="briefcase" fixedWidth={true} /> Work Experience</h1>
 
         <WorkExperience
           logo={data.salesforce}
