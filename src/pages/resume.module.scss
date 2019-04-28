@@ -1,0 +1,23 @@
+#resume {
+  // background: #F3EFE0;
+  max-width: 900px;
+  margin: auto;
+  padding: 0.5em;
+
+  h1 {
+    margin: 0;
+    color: #7DA5C6;
+    font-weight: normal;
+  }
+
+  .resume-section {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr;
+    margin-bottom: 1em;
+  
+    h2 {
+      margin: 0;
+      font-size: 1em;
+    }
+  }
+}

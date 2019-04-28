@@ -12,4 +12,15 @@
     margin: 0;
     font-size: 1.5em;
   }
+
+  a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
 }
