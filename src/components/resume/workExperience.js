@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Img from 'gatsby-image';
 
@@ -11,9 +12,9 @@ export default function WorkExperience({ children, logo, name, location, title, 
       </div>
       <div>
         <h2>{name}</h2>
-        <div className={styles.title}>{title}</div>
-        <div>{location}</div>
-        <div>{years}</div>
+        <div className={styles.title}><FontAwesomeIcon icon="user-tie" /> {title}</div>
+        <div><FontAwesomeIcon icon="map-marker" /> {location}</div>
+        <div><FontAwesomeIcon icon="calendar-alt" /> {years}</div>
       </div>
       <div>
         {children}

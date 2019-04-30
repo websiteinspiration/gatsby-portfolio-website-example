@@ -2,9 +2,10 @@
   max-width: 900px;
   margin: auto;
   padding: 0.5em;
+  font-size: 0.9em;
 
   h1 {
-    margin: 0;
+    margin: 0.5em 0;
     color: #7DA5C6;
     font-weight: normal;
   }
@@ -26,16 +27,6 @@
       margin-top: 0;
       list-style: none;
       padding: 0;
-
-      li {
-        background: #E1ECF4;
-        border: 1px solid darken(#E1ECF4, 5%);
-        display: inline-block;
-        margin: 0.25em;
-        padding: 0.25em 0.5em;
-        border-radius: 5px;
-        font-size: 0.8em;
-      }
     }
   }
 
@@ -43,6 +34,7 @@
     display: grid;
     grid-template-columns: 0.5fr 1fr 2fr;
     margin-bottom: 1em;
+    line-height: 1.5em;
   
     h2 {
       margin: 0;

@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import React from 'react';
 
+import Skill from '../components/resume/skill';
 import WorkExperience from '../components/resume/workExperience';
 
 import Layout from '../components/layout';
@@ -63,69 +64,54 @@ export default function Resume() {
     <Layout>
       <main id={styles.resume}>
 
-        <h1><FontAwesomeIcon icon="graduation-cap" fixedWidth={true} /> Education</h1>
-        <section className={styles.resumeSection}>
-          <div>
-            <Img fixed={data.uml.childImageSharp.fixed} />
-          </div>
-          <div>
-            <h2>UMass Lowell</h2>
-            <div>Lowell, Massachusetts</div>
-            <div>2000 - 2004</div>
-          </div>
-          <div>
-            <ul>
-              <li>B.S. Computer Science</li>
-              <li>Summa Cum Laude</li>
-            </ul>
-          </div>
-        </section>
-
         <h1><FontAwesomeIcon icon="code" fixedWidth={true} /> Skills</h1>
         <section className={styles.skillsSection}>
           <div>
             <h2><FontAwesomeIcon icon={['fab', 'js']} /> JavaScript</h2>
             <ul>
-              <li><FontAwesomeIcon icon={['fab', 'angular']} /> Angular</li>
-              <li>Backbone</li>
-              <li>Jasmine</li>
-              <li>Jest</li>
-              <li>jQuery</li>
-              <li>Mocha</li>
-              <li><FontAwesomeIcon icon={['fab', 'react']} /> React</li>
-              <li>RxJS</li>
-              <li>TypeScript</li>
-              <li>Webpack</li>
+              <Skill name="Angular" icon="angular" />
+              <Skill name="Backbone" />
+              <Skill name="Jasmine" />
+              <Skill name="Jest" />
+              <Skill name="jQuery" />
+              <Skill name="Mocha" />
+              <Skill name="React" icon="react" />
+              <Skill name="RxJS" />
+              <Skill name="TypeScript" />
+              <Skill name="Webpack" />
             </ul>
             <ul>
-              <li>Express</li>
-              <li><FontAwesomeIcon icon={['fab', 'node-js']} /> Node.js</li>
+              <Skill name="Express" />
+              <Skill name="Node.js" icon="node-js" />
             </ul>
           </div>
 
           <div>
             <h2><FontAwesomeIcon icon={['fab', 'java']} /> Java</h2>
             <ul>
-              <li>JSP</li>
-              <li>JUnit</li>
-              <li>Spring</li>
-              <li>Swing</li>
+              <Skill name="JSP" />
+              <Skill name="jUnit" />
+              <Skill name="Spring" />
+              <Skill name="Swing" />
             </ul>
 
             <h2><FontAwesomeIcon icon="toolbox" /> Tools</h2>
             <ul>
-              <li><FontAwesomeIcon icon={['fab', 'git']} /> Git</li>
-              <li>Vim</li>
-              <li>Visual Studio Code</li>
+              <Skill name="Docker" icon="docker" />
+              <Skill name="Git" icon="git" />
+              <Skill name="IntelliJ" />
+              <Skill name="Vim" />
+              <Skill name="Visual Studio Code" />
             </ul>
           </div>
 
           <div>
-            <h2>Web</h2>
+            <h2><FontAwesomeIcon icon="globe-americas" /> Web</h2>
             <ul>
-              <li><FontAwesomeIcon icon={['fab', 'html5']} /> HTML5</li>
-              <li><FontAwesomeIcon icon={['fab', 'css3']} /> CSS3</li>
-              <li><FontAwesomeIcon icon={['fab', 'sass']} /> SASS</li>
+              <Skill name="HTML5" icon="html5" />
+              <Skill name="CSS3" icon="css3" />
+              <Skill name="Sass" icon="sass" />
+              <Skill name="XML" />
             </ul>
           </div>
         </section>
@@ -240,6 +226,24 @@ export default function Resume() {
             <li>Implemented a graphical tool with Java Swing to automate parts of the customer onboarding process. This resulted in less downtime during onboarding and faster integration of new customer data.</li>
           </ul>
         </WorkExperience>
+
+        <h1><FontAwesomeIcon icon="graduation-cap" fixedWidth={true} /> Education</h1>
+        <section className={styles.resumeSection}>
+          <div>
+            <Img fixed={data.uml.childImageSharp.fixed} />
+          </div>
+          <div>
+            <h2>UMass Lowell</h2>
+            <div><FontAwesomeIcon icon="map-marker" /> Lowell, Massachusetts</div>
+            <div><FontAwesomeIcon icon="calendar-alt" /> 2000 - 2004</div>
+          </div>
+          <div>
+            <ul>
+              <li>B.S. Computer Science</li>
+              <li>Summa Cum Laude</li>
+            </ul>
+          </div>
+        </section>
 
       </main>
     </Layout>
