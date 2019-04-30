@@ -110,6 +110,8 @@ export default function Resume() {
             <ul>
               <Skill name="HTML5" icon="html5" />
               <Skill name="CSS3" icon="css3" />
+              <Skill name="GraphQL" />
+              <Skill name="REST" />
               <Skill name="Sass" icon="sass" />
               <Skill name="XML" />
             </ul>
