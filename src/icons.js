@@ -16,6 +16,7 @@ import {
   faTwitter
 } from '@fortawesome/free-brands-svg-icons';
 import {
+  faArrowLeft,
   faBriefcase,
   faCalendarAlt,
   faCode,
@@ -29,6 +30,7 @@ import {
 
 library.add(
   faAngular,
+  faArrowLeft,
   faBriefcase,
   faCalendarAlt,
   faCode,

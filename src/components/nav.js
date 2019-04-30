@@ -6,6 +6,8 @@ import styles from './nav.module.scss';
 export default function Nav() {
   return (
     <nav id={styles.siteNavigation}>
+      <Link to="/">Home</Link>
+      |
       <Link to="/resume">Resume</Link>
     </nav>
   );
