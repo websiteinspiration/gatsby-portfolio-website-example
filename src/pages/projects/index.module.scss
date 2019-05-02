@@ -1,0 +1,14 @@
+#projects {
+  padding: 0.5em;
+  max-width: 900px;
+  margin: auto;
+
+  h1 {
+    margin: 0;
+  }
+
+  #project-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

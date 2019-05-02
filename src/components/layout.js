@@ -7,7 +7,7 @@ import '../icons';
 
 import './layout.scss';
 
-export default function Layout({ children }) {
+export default function Layout({ children, title }) {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -21,7 +21,7 @@ export default function Layout({ children }) {
   return (
     <div>
       <Helmet>
-        <title>{data.site.siteMetadata.title}</title>
+        <title>{(title ? `${title} | ` : '') + data.site.siteMetadata.title}</title>
       </Helmet>
       <Header />
       {children}

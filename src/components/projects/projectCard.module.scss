@@ -1,0 +1,51 @@
+@import '../../variables';
+
+.project-card {
+  margin: 1em;
+  border: 1px solid #EEEEEE;
+  border-radius: 0.3em;
+  box-shadow: 0px 0px 10px 0px #CCCCCC;
+
+  width: 25em;
+  overflow: hidden;
+
+  .screenshot-wrapper {
+    overflow: hidden;
+    position: relative;
+
+    .link-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #7DA5C6;
+      border-radius: 0.3em;
+      color: #FFFFFF;
+      padding: 0.75em;
+      z-index: 900;
+    }
+
+    .screenshot {
+      height: 10em;
+      overflow: hidden;
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      .screenshot {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .project-card-content {
+    padding: 0.5em;
+
+    h2 {
+      margin: 0;
+
+      a {
+        color: $heading-color;
+      }
+    }
+  }
+}

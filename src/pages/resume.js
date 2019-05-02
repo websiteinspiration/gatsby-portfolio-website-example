@@ -61,7 +61,7 @@ export default function Resume() {
   `);
 
   return (
-    <Layout>
+    <Layout title="Resume">
       <main id={styles.resume}>
 
         <h1><FontAwesomeIcon icon="code" fixedWidth={true} /> Skills</h1>
