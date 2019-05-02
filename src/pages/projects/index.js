@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 import Layout from '../../components/layout';
@@ -13,7 +14,7 @@ export default function Projects() {
   return (
     <Layout title="Projects">
       <main id={styles.projects}>
-        <h1>Projects</h1>
+        <h1><FontAwesomeIcon icon="laptop" /> Projects</h1>
         <div id={styles.projectCards}>
 
           <ProjectCard

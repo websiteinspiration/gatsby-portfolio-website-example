@@ -24,6 +24,7 @@ import {
   faExternalLinkAlt,
   faGlobeAmericas,
   faGraduationCap,
+  faLaptop,
   faMapMarker,
   faToolbox,
   faUserTie
@@ -46,6 +47,7 @@ library.add(
   faHtml5,
   faJava,
   faJs,
+  faLaptop,
   faLinkedin,
   faMapMarker,
   faNodeJs,
