@@ -10,7 +10,7 @@ export default function Nav() {
   return (
     <nav id={styles.siteNavigation}>
       <div className={styles.hamburger} onClick={() => setOpen(!isOpen)}>
-        <FontAwesomeIcon icon={isOpen ? 'times' : 'bars'} />
+        <FontAwesomeIcon fixedWidth={true} icon={isOpen ? 'times' : 'bars'} />
       </div>
       <div className={`${styles.links} ${isOpen ? styles.open : ''}`}>
         <Link to="/">Home</Link>
