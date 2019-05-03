@@ -13,3 +13,9 @@
     font-style: italic;
   }
 }
+
+@media (max-width: 800px) {
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+}

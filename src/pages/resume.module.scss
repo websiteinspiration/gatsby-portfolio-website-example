@@ -12,7 +12,7 @@
 
   .skills-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     div {
       margin-right: 0.25em;
@@ -39,6 +39,14 @@
     h2 {
       margin: 0;
       font-size: 1em;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #resume {
+    .resume-section {
+      grid-template-columns: 1fr;
     }
   }
 }
