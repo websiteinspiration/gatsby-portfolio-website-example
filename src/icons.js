@@ -1,4 +1,4 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { config, library } from '@fortawesome/fontawesome-svg-core';
 
 import {
   faAngular,
@@ -29,6 +29,8 @@ import {
   faToolbox,
   faUserTie
 } from '@fortawesome/free-solid-svg-icons';
+
+config.autoAddCss = false;
 
 library.add(
   faAngular,
