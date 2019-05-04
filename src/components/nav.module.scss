@@ -34,17 +34,21 @@
       display: flex;
       flex-direction: column;
 
+      font-size: 1.5em;
+
       z-index: 999;
       background: #292929;
       position: absolute;
       top: $header-height;
-      left: 100%;
+      left: -100%;
       width: 100%;
+      opacity: 0;
       text-align: center;
-      transition: left 0.2s ease-out;
+      transition: all 0.2s ease-out;
 
       &.open {
         left: 0;
+        opacity: 1;
       }
 
       a {
