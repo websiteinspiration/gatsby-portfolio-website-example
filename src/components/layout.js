@@ -24,7 +24,9 @@ export default function Layout({ children, title }) {
         <title>{(title ? `${title} | ` : '') + data.site.siteMetadata.title}</title>
       </Helmet>
       <Header />
-      {children}
+      <div id="page-container">
+        {children}
+      </div>
     </div>
   );
 }

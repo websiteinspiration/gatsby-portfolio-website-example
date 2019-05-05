@@ -18,4 +18,8 @@ body {
     color: $heading-color;
     font-weight: normal;
   }
+
+  #page-container {
+    margin-top: $header-height;
+  }
 }
