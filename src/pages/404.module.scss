@@ -23,17 +23,13 @@
     color: #FFFFFF;
     z-index: 100;
 
+    h1, h2, h3 {
+      margin: 0;
+      color: #FFFFFF;
+    }
+
     h1 {
-      margin: 0;
       font-size: 6em;
-    }
-
-    h2 {
-      margin: 0;
-    }
-
-    h3 {
-      margin: 0;
     }
   }
 }
