@@ -1,0 +1,18 @@
+@import '../../variables';
+
+.entry {
+  margin: 1em;
+
+  .timestamp {
+    font-size: 0.8em;
+    color: #999999;
+  }
+
+  h2 {
+    font-weight: bold;
+
+    a {
+      color: $heading-color;
+    }
+  }
+}

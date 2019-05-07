@@ -21,6 +21,23 @@ module.exports = {
       options: {
         trackingId: 'UA-80557105-5'
       }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: join(__dirname, 'src', 'posts')
+      }
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-images',
+          'gatsby-remark-prismjs'
+        ]
+      }
     }
   ]
 };

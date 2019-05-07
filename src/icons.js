@@ -17,6 +17,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faArrowLeft,
+  faArrowRight,
   faBars,
   faBriefcase,
   faCalendarAlt,
@@ -27,6 +28,7 @@ import {
   faGraduationCap,
   faLaptop,
   faMapMarker,
+  faRss,
   faTimes,
   faToolbox,
   faUserTie
@@ -37,6 +39,7 @@ config.autoAddCss = false;
 library.add(
   faAngular,
   faArrowLeft,
+  faArrowRight,
   faBars,
   faBriefcase,
   faCalendarAlt,
@@ -57,6 +60,7 @@ library.add(
   faMapMarker,
   faNodeJs,
   faReact,
+  faRss,
   faSass,
   faTimes,
   faToolbox,

@@ -14,6 +14,7 @@ export default function Nav() {
       </div>
       <div className={`${styles.links} ${isOpen ? styles.open : ''}`}>
         <Link to="/">Home</Link>
+        <Link to="/blog">Blog</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/resume">Resume</Link>
       </div>

@@ -1,5 +1,9 @@
-@import '~@fortawesome/fontawesome-svg-core/styles.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+@import '~@fortawesome/fontawesome-svg-core/styles.css';
+@import '~prismjs/themes/prism-solarizedlight.css';
+@import '~prismjs/plugins/line-numbers/prism-line-numbers.css';
+
 @import '../variables';
 
 body {
@@ -8,6 +12,7 @@ body {
 
   a {
     text-decoration: none;
+    color: $link-color;
 
     &:hover {
       text-decoration: underline;
@@ -17,6 +22,7 @@ body {
   h1, h2 {
     color: $heading-color;
     font-weight: normal;
+    margin: 0;
   }
 
   #page-container {
