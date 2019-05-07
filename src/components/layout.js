@@ -22,6 +22,7 @@ export default function Layout({ children, title }) {
     <div>
       <Helmet>
         <title>{(title ? `${title} | ` : '') + data.site.siteMetadata.title}</title>
+        <link rel="alternative" type="application/rss+xml" title="Joe Attardi's Blog" href="/rss.xml" />
       </Helmet>
       <Header />
       <div id="page-container">

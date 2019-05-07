@@ -2,7 +2,9 @@ const { join } = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Joe Attardi'
+    title: 'Joe Attardi',
+    description: "Joe Attardi's personal site",
+    siteUrl: 'https://joeattardi.codes'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -38,6 +40,7 @@ module.exports = {
           'gatsby-remark-prismjs'
         ]
       }
-    }
+    },
+    'gatsby-plugin-feed'
   ]
 };
