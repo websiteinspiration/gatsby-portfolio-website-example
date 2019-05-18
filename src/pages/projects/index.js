@@ -4,6 +4,7 @@ import React from 'react';
 import Layout from '../../components/layout';
 import ProjectCard from '../../components/projects/projectCard';
 
+import emojiPicker from '../../images/projects/emoji-picker.png';
 import githubPrDashboard from '../../images/projects/github-pr-dashboard.png';
 import scrumDeck from '../../images/projects/scrum-deck.png';
 import tailstreamer from '../../images/projects/tailstreamer.png';
@@ -16,6 +17,13 @@ export default function Projects() {
       <main id={styles.projects}>
         <h1><FontAwesomeIcon icon="laptop" /> Projects</h1>
         <div id={styles.projectCards}>
+
+          <ProjectCard
+            name="Emoji Picker"
+            image={emojiPicker}
+            href="https://emojipicker.app">
+            Browse and search emojis, and copy them to your clipboard for easy use.
+          </ProjectCard>
 
           <ProjectCard
             name="ScrumDeck"
