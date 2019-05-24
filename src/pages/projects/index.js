@@ -7,6 +7,7 @@ import ProjectCard from '../../components/projects/projectCard';
 import emojiPicker from '../../images/projects/emoji-picker.png';
 import githubPrDashboard from '../../images/projects/github-pr-dashboard.png';
 import scrumDeck from '../../images/projects/scrum-deck.png';
+import snackbar from '../../images/projects/react-snackbar-alert.png';
 import tailstreamer from '../../images/projects/tailstreamer.png';
 
 import styles from './index.module.scss';
@@ -23,6 +24,16 @@ export default function Projects() {
             image={emojiPicker}
             href="https://emojipicker.app">
             Browse and search emojis, and copy them to your clipboard for easy use.
+          </ProjectCard>
+
+          <ProjectCard
+            name="React Snackbar Alert"
+            image={snackbar}
+            href="https://npmjs.com/package/react-snackbar-alert">
+            Simple snackbar style notifications for React.
+            <p>
+              <a href="https://badge.fury.io/js/react-snackbar-alert"><img src="https://badge.fury.io/js/react-snackbar-alert.svg" alt="npm version" height="18" /></a>
+            </p>
           </ProjectCard>
 
           <ProjectCard
