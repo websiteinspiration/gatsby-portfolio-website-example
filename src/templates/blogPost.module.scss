@@ -28,6 +28,10 @@ $max-width: 900px;
     max-width: $max-width;
     margin: auto;
     padding: 0.5em;
+
+    h1 {
+      font-size: 2em;
+    }
   }
 
   #links-container {
