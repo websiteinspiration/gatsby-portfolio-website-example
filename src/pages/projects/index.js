@@ -4,6 +4,7 @@ import React from 'react';
 import Layout from '../../components/layout';
 import ProjectCard from '../../components/projects/projectCard';
 
+import emojiButton from '../../images/projects/emoji-button.png';
 import emojiPicker from '../../images/projects/emoji-picker.png';
 import githubPrDashboard from '../../images/projects/github-pr-dashboard.png';
 import scrumDeck from '../../images/projects/scrum-deck.png';
@@ -18,6 +19,16 @@ export default function Projects() {
       <main id={styles.projects}>
         <h1><FontAwesomeIcon icon="laptop" /> Projects</h1>
         <div id={styles.projectCards}>
+
+          <ProjectCard
+            name="Emoji Button"
+            image={emojiButton}
+            href="https://github.com/joeattardi/emoji-button">
+            Vanilla JavaScript emoji picker.
+            <p>
+              <a href="https://badge.fury.io/js/emoji-button"><img src="https://badge.fury.io/js/emoji-button.svg" alt="npm version" height="18" /></a>
+            </p>
+            </ProjectCard>
 
           <ProjectCard
             name="Emoji Picker"
