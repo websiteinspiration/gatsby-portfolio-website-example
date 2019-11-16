@@ -26,7 +26,7 @@ export default function Projects() {
             href="https://github.com/joeattardi/emoji-button">
             Vanilla JavaScript emoji picker.
             <p>
-              <a href="https://badge.fury.io/js/emoji-button"><img src="https://badge.fury.io/js/emoji-button.svg" alt="npm version" height="18" /></a>
+              <a href="https://badge.fury.io/js/%40joeattardi%2Femoji-button"><img src="https://badge.fury.io/js/%40joeattardi%2Femoji-button.svg" alt="npm version" height="18" /></a>
             </p>
             </ProjectCard>
 
