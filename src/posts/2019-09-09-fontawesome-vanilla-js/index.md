@@ -2,6 +2,7 @@
 title: 'How to use Font Awesome icons in a vanilla JavaScript project'
 date: '2019-09-09'
 summary: "Use this great icon library in your plain JS projects!"
+banner: 'Font Awesome'
 ---
 
 I was working on a vanilla JavaScript project recently and wanted to add some Font Awesome icons. Previously I have used Font Awesome icons in React or Angular projects, but never plain JavaScript. It turned out to be pretty easy.

@@ -4,14 +4,15 @@ import React from 'react';
 
 import BlogIndexEntry from '../components/blog/blogIndexEntry';
 import Layout from '../components/layout';
+import Title from '../components/title';
 
 import styles from './blog.module.scss';
 
 export default function Blog({ data }) {
   return (
     <Layout title="Blog">
+      <Title title="Blog" />
       <main id={styles.blog}>
-        <h1><FontAwesomeIcon icon="rss" /> Blog</h1>
         {data.allMarkdownRemark.nodes.map(node => <BlogIndexEntry node={node} key={node.id} />)}
       </main>
     </Layout>
@@ -26,8 +27,11 @@ export const query = graphql`
         frontmatter {
           title
           summary
+          image
+          banner
           date(formatString: "MMMM D, YYYY")
         }
+        excerpt
         fields {
           slug
         }

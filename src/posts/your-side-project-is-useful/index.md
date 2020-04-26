@@ -2,6 +2,7 @@
 title: 'Your side project is useful, even if no one uses it'
 date: '2019-05-04'
 summary: "Not every project becomes a huge hit. That's not reason not to do it, though."
+banner: 'Side projects'
 ---
 
 This is what most of my GitHub repositories look like:

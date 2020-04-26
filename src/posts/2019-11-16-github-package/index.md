@@ -2,6 +2,7 @@
 title: "How to publish an npm package to npm and GitHub Package Registry simultaneously"
 date: "2019-11-16"
 summary: "Publish to GitHub's new registry without losing your old npm package."
+image: /blog/npm-github.png
 ---
 
 [GitHub Package Registry](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages) recently went GA. There is pretty good documentation for how to use it, but it involves changing your `package.json` and/or `.npmrc` in your project to explicitly specify GitHub's registry. This means you lose the ability to publish to the npm registry. In my case, I wanted to publish my package to both registries.

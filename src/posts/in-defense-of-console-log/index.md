@@ -2,6 +2,7 @@
 title: 'In defense of the humble console.log'
 date: '2019-08-07'
 summary: "Sometimes, console.log can be the right tool for the job."
+banner: 'console.log'
 ---
 
 There is some negative sentiment out there about using `console.log` for debugging. It's true that, in

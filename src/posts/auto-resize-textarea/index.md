@@ -1,6 +1,7 @@
 ---
 title: Auto-resize a textarea as its content changes
 date: '2019-05-25'
+banner: 'Auto-resize textarea'
 summary: 'Build a textarea that auto-resizes to fit its content using pure JavaScript.'
 ---
 This post describes how to build an auto-resizing textarea. It has the following features:

@@ -2,12 +2,13 @@
 title: "All about `this` in JavaScript"
 date: "2020-04-14"
 summary: "An introduction (or a refresher!) on the `this` keyword in JavaScript."
+image: /blog/what-is-this.png
 ---
-## What is `this`?
+## What is "this"?
 
 It depends on the situation. Let’s look at a few common scenarios.
 
-### The global `this`
+### The global "this"
 
 Outside of a function, `this` references the global object. In a browser environment, this is typically the `window` object. In this scenario, you can set properties on the global object by referencing it with this:
 
@@ -19,7 +20,7 @@ console.log(name); // Joe
 console.log(this.name); // Joe
 ```
 
-### `this` inside a function called on an object
+### "this" inside a function called on an object
 
 Suppose we have the following object:
 
@@ -75,7 +76,7 @@ const ben = {
 ben.sayHello(); // prints "Hello, I'm Ben"
 ```
 
-### `this` inside an event listener
+### "this" inside an event listener
 
 Another common scenario is an event listener. When an event listener is added, a callback function is specified to handle the event. When this callback is called, `this` refers to the object that the event listener was added to.
 
@@ -87,7 +88,7 @@ document.querySelector('button.myButton').addEventListener('click', function() {
 
 Here we added a `click` listener to a button. When the button is clicked and the callback function is executed, `this` refers to the button. 
 
-### `this` inside a callback
+### "this" inside a callback
 
 There are several useful functions on `Array.prototype` such as `forEach`, `map`, `reduce`, etc. Each of these takes a callback function as an argument.
 
@@ -159,7 +160,7 @@ Why does this work? Because a function inherits the surrounding scope (thanks, c
 
 This is generally frowned upon these days, as there are better ways to accomplish this, as discussed in the next section.
 
-## Changing the value of `this`
+## Changing the value of "this"
 
 ### Using an arrow function
 
@@ -189,7 +190,7 @@ Hello Ben, I'm Joe
 
 The value of `this` inside the arrow callback function is the `joe` object.
 
-### Use `Function.prototype.bind`
+### Use Function.prototype.bind
 
 There are several handy functions on the prototype of `Function`. One of these is `bind`. With this function you can change what `this` refers to in a given function.
 
@@ -225,7 +226,7 @@ Here's what `bind` does: Calling `bind` on a function like we did above returns 
 
 `bind` can actually take more than one argument. That's beyond the scope of this post, but essentially it allows you to do partial application of functions.
 
-### Use `Function.prototype.call` or `Function.prototype.apply`
+### Use Function.prototype.call or Function.prototype.apply
 
 Two other useful functions on the `Function` prototype are `call` and `apply`. They both have the same end result, they just approach it slightly differently, as we will see in a moment.
 

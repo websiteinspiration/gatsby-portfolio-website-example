@@ -1,18 +1,54 @@
 @import '../../variables';
 
-.entry {
-  margin: 1em;
+.banner-link:hover {
+  text-decoration: none;
+}
 
-  .timestamp {
-    font-size: 0.8em;
-    color: #999999;
+.blog {
+  display: flex;
+  margin: 1rem;
+
+  border-top: 2px solid #666666;
+  padding-top: 1rem;
+
+  &:first-child {
+    border-top: none;
   }
 
-  h2 {
-    font-weight: bold;
+  img {
+    width: 300px;
+  }
 
-    a {
-      color: $heading-color;
+  .placeholder {
+    width: 300px;
+    height: 200px;
+    background: url('/hero.jpg');
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+    color: #FFFFFF;
+  }
+
+  .entry {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 1em;
+
+    .timestamp {
+      font-size: 0.8em;
+      color: #999999;
+    }
+
+    h2 {
+      font-weight: bold;
+
+      a {
+        color: $heading-color;
+      }
     }
   }
 }

@@ -2,6 +2,7 @@
 title: Create a basic lexer with JavaScript
 date: '2016-10-30'
 summary: 'Build a quick and dirty lexer to tokenize JSON.'
+banner: 'JSON lexer'
 ---
 A lexer takes an input string and produces a list of tokens. This is the first step in parsing text.
 For a project, I recently had to write a lexer for JSON to do syntax highlighting, and I thought

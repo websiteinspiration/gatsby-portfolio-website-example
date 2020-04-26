@@ -1,0 +1,14 @@
+.title {
+  background: url('/title-banner.jpg');
+
+  .inner {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+
+    h1 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+  }
+}
