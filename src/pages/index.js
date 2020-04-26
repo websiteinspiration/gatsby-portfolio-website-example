@@ -4,12 +4,13 @@ import Img from 'gatsby-image';
 import React from 'react';
 
 import Layout from '../components/layout';
+import title from '../images/title.png';
 
 import styles from './index.module.scss';
 
 export default function Index({ data }) {
   return (
-    <Layout>
+    <Layout transparentHeader={true}>
       <div className={styles.hero}>
         <Img 
           sizes={data.heroImage.childImageSharp.sizes} 
@@ -23,8 +24,7 @@ export default function Index({ data }) {
         <div className={styles.overlay}></div>
         <div className={styles.center}>
           <div className={styles.title}>
-            <h1>Joe Attardi</h1>
-            <h2>Software Engineer</h2>
+            <img src={title} />
           </div>
           <div className={styles.links}>
             <SocialLink

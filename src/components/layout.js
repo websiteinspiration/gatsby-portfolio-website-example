@@ -7,7 +7,7 @@ import '../icons';
 
 import './layout.scss';
 
-export default function Layout({ children, title }) {
+export default function Layout({ children, title, transparentHeader }) {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -24,7 +24,7 @@ export default function Layout({ children, title }) {
         <title>{(title ? `${title} | ` : '') + data.site.siteMetadata.title}</title>
         <link rel="alternative" type="application/rss+xml" title="Joe Attardi's Blog" href="/rss.xml" />
       </Helmet>
-      <Header />
+      <Header transparent={transparentHeader} />
       <div id="page-container">
         {children}
       </div>

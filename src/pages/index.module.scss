@@ -1,8 +1,9 @@
 @import '../variables';
 
 .hero {
-  height: calc(100vh - #{$header-height});
+  height: calc(100vh);
   position: relative;
+  margin-top: -4rem;
 
   display: flex;
   flex-direction: column;
@@ -25,17 +26,12 @@
     z-index: 100;
 
     .title {
-      text-shadow: 5px 5px 5px #000000;
-      background: rgba(0, 0, 0, 0.5);
+      background: transparent;
       padding: 0.5em;
 
-      h1, h2, h3 {
-        margin: 0;
-        color: #FFFFFF;
-      }
-
-      h1 {
-        font-size: 5em;
+      img {
+        width: 100%;
+        max-width: 700px;
       }
     }
 
@@ -63,5 +59,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .hero .center .links {
+    font-size: 3em;
   }
 }
