@@ -9,8 +9,15 @@ export default function Nav() {
 
   return (
     <nav id={styles.siteNavigation}>
-      <div className={styles.hamburger} onClick={() => setOpen(!isOpen)}>
-        <FontAwesomeIcon fixedWidth={true} icon={isOpen ? 'times' : 'bars'} />
+      <div
+        className={
+          isOpen ? `${styles.hamburger} ${styles.open}` : styles.hamburger
+        }
+        onClick={() => setOpen(!isOpen)}
+      >
+        <div />
+        <div />
+        <div />
       </div>
       <div className={`${styles.links} ${isOpen ? styles.open : ''}`}>
         <Link to="/">Home</Link>
