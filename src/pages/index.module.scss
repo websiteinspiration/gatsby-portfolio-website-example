@@ -1,5 +1,17 @@
 @import '../variables';
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero {
   height: calc(100vh);
   position: relative;
@@ -32,33 +44,60 @@
       img {
         width: 100%;
         max-width: 700px;
+        animation: appear 500ms;
       }
     }
 
     .links {
       padding: 0.5em;
+      padding-bottom: 0;
       font-size: 4em;
       display: flex;
       justify-content: center;
+      animation: appear 500ms;
+      animation-delay: 150ms;
+      animation-fill-mode: forwards;
 
-      .link {
-        margin: 0.25em;
-
-        a {
-          color: #FFFFFF;
-
-          svg {
-            transition: all 0.1s;
-          }
-
-          &:hover {
-            svg {
-              transform: scale(1.2);
-            }
-          }
-        }
-      }
+      opacity: 0;
     }
+  }
+}
+
+@keyframes showLink {
+  from {
+     opacity: 0; 
+     transform: scale(0.8);
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1);
+  }
+}
+
+@keyframes hideLink {
+  from {
+     opacity: 1; 
+     transform: scale(1);
+  }
+  to {
+     opacity: 0; 
+     transform: scale(0.8);
+  }
+}
+
+.link-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #E0CE39;
+
+  &.show {
+    opacity: 1;
+    animation: showLink 250ms;
+  }
+
+  &.hide {
+    opacity: 0;
+    animation: hideLink 250ms;
   }
 }
 

@@ -1,0 +1,18 @@
+.link {
+  margin: 0.25em;
+
+  a {
+    color: #FFFFFF;
+
+    svg {
+      transition: all 0.1s;
+    }
+
+    &:hover {
+      svg {
+        transform: scale(1.2) rotate(-5deg);
+        color: #E0CE39;
+      }
+    }
+  }
+}

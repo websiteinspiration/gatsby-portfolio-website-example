@@ -3,6 +3,7 @@ import { config, library } from '@fortawesome/fontawesome-svg-core';
 import {
   faAngular,
   faCss3,
+  faDev,
   faDocker,
   faGit,
   faGithub,
@@ -45,6 +46,7 @@ library.add(
   faCalendarAlt,
   faCode,
   faCss3,
+  faDev,
   faDocker,
   faEnvelope,
   faExternalLinkAlt,
