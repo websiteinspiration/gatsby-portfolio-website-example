@@ -17,6 +17,7 @@ import {
   faTwitter
 } from '@fortawesome/free-brands-svg-icons';
 import {
+  faAngleDoubleDown,
   faArrowLeft,
   faArrowRight,
   faBars,
@@ -38,6 +39,7 @@ import {
 config.autoAddCss = false;
 
 library.add(
+  faAngleDoubleDown,
   faAngular,
   faArrowLeft,
   faArrowRight,
